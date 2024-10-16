@@ -13,18 +13,15 @@ The dataset used is derived from the Alexandria3k package and contains a 1% samp
 1. **Data Preprocessing:**
    * Remove HTML tags, numbers, and special characters from abstracts and titles.
    * Lemmatize words in abstracts and titles.
-   * Calculate unique word ratios for titles and unique pair ratios for abstracts.
 
 2. **Feature Engineering:**
-   * Create additional features based on the dataset, such as the number of references, average reference year, and author affiliations.
+   * Create additional features based on the dataset, such as vocabulary uniqueness, number of authors and references, average reference year, and author affiliations.
 
 3. **Model Training:**
    * Train various machine learning models, including:
      * Decision Tree Regressor
-     * XGBoost Regressor
-     * LightGBM Regressor
-     * Voting Regressor
-     * Stacking Regressor
+     * XGBoost and LightGBM Regressor
+     * Voting and Stacking Ensemble methods
      * Neural Network
    * Use cross-validation to evaluate model performance and tune hyperparameters.
 
@@ -40,7 +37,7 @@ The results indicate that while the models can predict disruptiveness to some ex
 
 Future work could explore the following:
 
-* Incorporate additional features, such as citation networks or semantic analysis of text.
+* Incorporate additional features, such as semantic analysis of text.
 * Experiment with different machine learning algorithms and techniques.
 * Collect a larger and more diverse dataset.
 * Investigate the impact of linguistic changes on disruptiveness.
